@@ -33,7 +33,7 @@ cd TechCareer_Vki_Project
    ```sh 
    npm install
    ````
-5.MySQL veritabanını oluşturun ve bağlantı bilgilerini config.js dosyasına ekleyin.
+5.MySQL veritabanını oluşturun ve bağlantı bilgilerini config.js/index.js dosyasına ekleyin.
 
 6.Uygulamayı başlatın:
    ```sh 
