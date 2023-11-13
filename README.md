@@ -70,7 +70,7 @@ Kullanıcıların rahatça gezinebileceği ve bilgilerini güncelleyebileceği b
 Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
 
 ## Uygulama Ekran Görüntüleri
-![Alternatif Metin](Login or Register.jpg)
+https://github.com/Yldrmceyy/TechCareer_Vki_Project/issues/2#issue-1991264084
 
 ## Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için 
