@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Register</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="shortcut icon" type="image/png" href="/logo.png" />
+  
+
+</head>
+<body>
+  <% if (!user) { %>
+    <img src="./logo.png" alt="Logo" class="logos" />
+    <!-- Giriş Formu -->
+    <h3>Giriş Yap</h3>
+    <form class="form1" action="/login" method="post">    
+      <label for="loginUsername">Kullanıcı Adı:</label>
+      <input class="form__input" id="loginUsername" name="username" required>
+      <label  for="loginPassword">Şifre:</label>
+      <input class="form__input" type="password" id="loginPassword" name="password" required>
+      <button type="submit">Giriş Yap</button>
+    </form>
+ <br><br>
+
+    <!-- Kayıt Formu -->
+    <h3>Kayıt Ol</h3>
+    <form class="form1" action="/register" method="post">
+      <label for="registerUsername">Kullanıcı Adı:</label>
+      <input class="form__input" type="text" id="registerUsername" name="username" required>
+      <label for="registerPassword">Şifre:</label>
+      <input class="form__input" type="password" id="registerPassword" name="password" required>
+      <button type="submit">Kayıt Ol</button>
+    </form>
+  <% } else { %>
+    <!-- Kullanıcı Giriş Yaptıysa -->
+    <h1>Hello <%= user %>!</h1>
+    <form action="/logout" method="get">
+      <button type="submit">Logout</button>
+    </form>
+  <% } %>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/sstyle.css" />
+    <title>VKİ</title>
+  </head>
+  <body>
+  
+    <nav>
+      <h1>Hello <%= username %>!</h1>
+
+      <img src="./logo.png" alt="Logo" class="logo" />
+
+    <form class="login" action=""></form>
+      <div class=" login__input login__input--pin--1"> <p>Kullanıcı <%= username %>!</p></div>
+      <form class=" login__input login__input--pin " action="/logout" method="get">
+        <button class="submit">Çıkış</button>
+      </form>
+    </form>
+    </nav>
+    <main class="main">
+      <div class="section">
+          <h1 class="section__label">Vücut Kitle Endeksi</h1>
+      </div>
+      <div class="container">
+        
+        <div>
+          <img class="image" src="./img/bim.png" >
+        </div>
+
+      </div>
+
+            
+      <div class="aside">
+        <h2>Vücut Kitle Endeksinizi Hesaplayalım</h2>
+
+        
+<div id="form" class="form form--vki">
+  <form action="/calculate" method="post">
+    <label class="form__label">Kilonuzu giriniz.(kg)</label>
+    <input id="weight" name="weight" type="number" class="form__input form__input--kg" placeholder="Kilo" required></input>
+    <div></div>
+
+    <label class="form__label">Boyunuzu giriniz.(cm)</label>
+    <input id="height" name="height" type="number" class="form__input form__input--cm" placeholder="Boy" required></input>
+    <div></div>
+
+    <button id="btn" class="form__btn form__btn--vki" type="submit">&rarr;</button><br>
+  </form>
+</div>
+
+        <div  id="result" class="result"> Vücut Kitle Endeks Sonucunuz: ? </div>
+
+        
+      </div>
+      
+    </main>
+    <script src="script.js"></script>
+  
+
+
+
+<script>
+  // Sayfa yüklendiğinde kullanıcının bilgilerini kontrol et
+  async function checkUserData() {
+    try {
+      const response = await fetch('/getuserdata');
+      const data = await response.json();
+
+      if (data.weight && data.height) {
+        // Eğer veri varsa eski bilgileri ekrana yazdır ve eski blgileri isteyip istemediğini sor
+        const updateConfirmation = confirm(`Eski bilgilerinizi görmek ister misiniz?`);
+        
+        if (updateConfirmation) {
+          // Eğer bilgiler isteniyorsa formu görünür yap ve eski bilgileri input alanlarına doldur
+          document.getElementById('form').style.display = 'block';
+          document.getElementById('weight').value = data.weight;
+          document.getElementById('height').value = data.height;
+
+          // Result kısmını gizle
+          document.getElementById('result').textContent = `Vücut Kitle Endeksiniz: ${calculateBMI(data.weight, data.height)}`;
+          
+        } else {
+          // Eğer eski bilgiler istenmiyorsa result kısmını ekrana yazdır
+          document.getElementById('result').textContent = `Vücut Kitle Endeksiniz: ?`;
+
+        }
+      } else {
+        // Eğer veri yoksa giriş formunu görünür yap
+        document.getElementById('form').style.display = 'block';
+      }
+    } catch (error) {
+      console.error('Veri çekme hatası:', error);
+    }
+  }
+
+  // Vücut Kitle Endeksi Hesaplama Fonksiyonu
+  function calculateBMI(weight, height) {
+    return (weight/((height*height)/10000)).toFixed(1);
+  }
+
+  // Sayfa yüklendiğinde veriyi kontrol et
+  document.addEventListener('DOMContentLoaded', checkUserData);
+</script>
+
+
+
+  </body>
+</html>
