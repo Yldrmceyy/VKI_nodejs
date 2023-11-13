@@ -3,6 +3,11 @@
 ## Amaç
 Vücut Kitle İndeksi (VKİ), bir kişinin kilo durumunu değerlendirmek için kullanılan bir ölçümdür. Bu uygulama, kullanıcılara VKİ hesaplama ve bu verileri güvenli bir şekilde saklama imkanı sunar.
 
+## Gereksinimler
+- Node.js
+- MySQL
+- Git
+
 ## Kullanılan Teknolojiler
 
 - **Node.js ve Express:** Sunucu tarafı uygulama geliştirmek için kullanıldı.
@@ -11,11 +16,16 @@ Vücut Kitle İndeksi (VKİ), bir kişinin kilo durumunu değerlendirmek için k
 - **HTML, CSS, JavaScript:** İstemci tarafındaki kullanıcı arayüzü geliştirmek için kullanıldı.
 
 ## Nasıl Kullanılır?
-1. Projeyi bilgisayarınıza klonlayın:
+1.Node.js Kurulumu:
+Proje üzerinde çalışmaya başlamadan önce Node.js kurulumunu gerçekleştirin
+
+2. Projeyi bilgisayarınıza klonlayın:
 ```sh 
-(https://github.com/Yldrmceyy/TechCareer_Vki_Project.git)https://github.com/Yldrmceyy/TechCareer_Vki_Project.git
+ git clone https://github.com/Yldrmceyy/TechCareer_Vki_Project.git
  ````
-2. Proje dizinine gidin:
+Projeyi VsCode ile açın
+
+3. Proje dizinine gidin:
   ```sh 
 cd TechCareer_Vki_Project
    ````
@@ -23,14 +33,15 @@ cd TechCareer_Vki_Project
    ```sh 
    npm install
    ````
+5.MySQL veritabanını oluşturun ve bağlantı bilgilerini config.js dosyasına ekleyin.
 
-4.Uygulamayı başlatın::
+6.Uygulamayı başlatın:
    ```sh 
    npm start
    ````
-5.Tarayıcıda http://localhost:3000 adresine gidin.
+7.Tarayıcıda http://localhost:3000 adresine gidin.
 
-## Proje Özellikleri ve Kullanım Senaryoları
+## Proje Özellikleri ve Kullanım
 
 **1- Kullanıcı Kaydı**:
 Yeni kullanıcılar, kullanıcı adı ve şifre girişi yaparak sisteme kayıt olabilirler.
@@ -58,5 +69,10 @@ Kullanıcıların rahatça gezinebileceği ve bilgilerini güncelleyebileceği b
 
 Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
 
-##Uygulama Ekran Görüntüleri
+## Uygulama Ekran Görüntüleri
 ![Alternatif Metin](Login or Register.jpg)
+
+## Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için 
+[MIT](LICENSE)
+dosyasına bakın.
