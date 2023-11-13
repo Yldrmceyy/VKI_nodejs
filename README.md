@@ -23,9 +23,40 @@ cd TechCareer_Vki_Project
    ```sh 
    npm install
    ````
+
 4.Uygulamayı başlatın::
    ```sh 
    npm start
    ````
 5.Tarayıcıda http://localhost:3000 adresine gidin.
 
+## Proje Özellikleri ve Kullanım Senaryoları
+
+**1- Kullanıcı Kaydı**:
+Yeni kullanıcılar, kullanıcı adı ve şifre girişi yaparak sisteme kayıt olabilirler.
+
+**2- Kullanıcı Giriş ve Çıkış**:
+Kayıtlı kullanıcılar, kullanıcı adı ve şifreleriyle giriş yapabilirler.
+Oturum açıkken, kullanıcılar "Çıkış" butonuyla oturumu kapatabilirler.
+
+**3- Vücut Kitle Endeksi (VKİ) Hesaplama**:
+Sisteme giriş yaptıktan sonra; kullanıcılar, kilo ve boy bilgilerini girerek VKİ hesaplayabilirler.
+VKİ hesaplandıktan sonra sonuç kullanıcıya gösterilir.
+
+**4- Bilgilerin Güncellenmesi**:
+Kullanıcılar, giriş yaptıktan sonra mevcut bilgilerini güncelleyebilirler.
+VKİ bilgileri güncellendiğinde, kullanıcıya sonuç tekrar gösterilir.
+
+**5- Bilgilerin Saklanması**:
+Kullanıcı bilgileri ve VKİ verileri MySQL veritabanında güvenli bir şekilde saklanır.
+Oturum açıkken kullanıcının verileri çekilip ekrana gösterilebilir.
+
+**6- Kullanıcı Arayüz**:
+Projede EJS (Embedded JavaScript) kullanılarak dinamik HTML sayfaları oluşturulmuştur.
+<br>
+Kullanıcıların rahatça gezinebileceği ve bilgilerini güncelleyebileceği bir arayüz tasarlanmıştır.
+
+Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
+
+##Uygulama Ekran Görüntüleri
+![Alternatif Metin](Login or Register.jpg)
