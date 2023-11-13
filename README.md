@@ -72,6 +72,8 @@ Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmaların�
 ## Uygulama Ekran Görüntüleri
 https://github.com/Yldrmceyy/TechCareer_Vki_Project/issues/2#issue-1991264084
 
+![hello_sayfa](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/28090c28-25c2-4516-9ad6-b488dfb6ca57)
+
 ## Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için 
 [MIT](LICENSE)
