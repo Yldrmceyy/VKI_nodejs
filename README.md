@@ -70,9 +70,7 @@ Kullanıcıların rahatça gezinebileceği ve bilgilerini güncelleyebileceği b
 Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
 
 ## Uygulama Ekran Görüntüleri
-https://github.com/Yldrmceyy/TechCareer_Vki_Project/issues/2#issue-1991264084
-
-![hello_sayfa](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/28090c28-25c2-4516-9ad6-b488dfb6ca57)
+![proje_adım](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/2071a00a-0ced-4d2b-a8bf-769c6c5057a8)
 
 ## Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için 
