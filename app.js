@@ -15,9 +15,9 @@ app.use(express.static('public'));
 
 // Ana sayfa
 app.get('/', (req, res) => {
-  // Kullanıcı oturumu açıksa hello sayfasına yönlendir
+  // Kullanıcı oturumu açıksa anasayfa sayfasına yönlendir
   if (req.session.user) {
-    res.redirect('/hello');
+    res.redirect('/anasayfa');
   } else {
     res.render('index', { user: req.session.user });
   }
@@ -32,7 +32,7 @@ app.post('/register', (req, res) => {
     if (err) throw err;
     console.log('Kullanıcı başarıyla kaydedildi.');
     req.session.user = username;
-    res.redirect('/hello'); // Kayıt olduktan sonra "Hello World" sayfasına yönlendir
+    res.redirect('/anasayfa'); // Kayıt olduktan sonra "anasayfa" sayfasına yönlendir
   });
 });
 
@@ -46,7 +46,7 @@ app.post('/login', (req, res) => {
     if (result.length > 0) {
       req.session.user = username;
     }
-    res.redirect('/hello'); // Giriş yapıldıktan sonra "Hello World" sayfasına yönlendir
+    res.redirect('/anasayfa'); // Giriş yapıldıktan sonra "anasayfa " sayfasına yönlendir
   });
 });
 
@@ -56,10 +56,10 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
-// Hello  sayfası
-app.get('/hello', (req, res) => {
+// anasayfa  sayfası
+app.get('/anasayfa', (req, res) => {
   if (req.session.user) {
-    res.render('hello', { username: req.session.user }); // EJS kullanarak sayfayı render et
+    res.render('anasayfa', { username: req.session.user }); // EJS kullanarak sayfayı render et
   } else {
     res.redirect('/');
   }

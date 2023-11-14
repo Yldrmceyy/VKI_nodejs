@@ -15,5 +15,9 @@ db.connect((err) => {
   console.log('MySQL veritabanına bağlandı. ID: ' + db.threadId);
 });
 
-module.exports = db;
+module.exports = db; //Oluşturulan bağlantı nesnesi (db) dışa aktarıld.
+
+
+//Bu kod bloğunda; MySQL veritabanına bağlanmak için gerekli bilgileri yazdım, bir bağlantı oluşturdum
+
 
