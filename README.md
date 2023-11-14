@@ -45,7 +45,7 @@ cd TechCareer_Vki_Project
   ```sh 
 TechCareer_Vki_Project/
 ├── db/
-│    ├── index.js
+│    └──index.js
 │ 
 ├── node_modules/
 │    ├── (bağımlılıklar)
@@ -54,18 +54,18 @@ TechCareer_Vki_Project/
 ├── public/
 |   ├── style.css
 |   |     ├── style.css
-|   |     ├── style2.css
+|   |     └── style2.css
 │   ├── img
 │   └── script.js
 │
 ├── views/
 |     ├── anasayfa.ejs
-|     ├── index.ejs
+|     └── index.ejs
 |
 ├── app.js
 ├── package-lock.json
 ├── package.json
-├── README.md
+└── README.md
    ````
 ## Proje Özellikleri ve Kullanım
 
@@ -152,7 +152,7 @@ cd TechCareer_Vki_Project
   ```sh 
 TechCareer_Vki_Project/
 ├── db/
-│    ├── index.js
+│    └──index.js
 │ 
 ├── node_modules/
 │    ├── (dependencies)
@@ -161,18 +161,18 @@ TechCareer_Vki_Project/
 ├── public/
 |   ├── style.css
 |   |     ├── style.css
-|   |     ├── style2.css
+|   |     └── style2.css
 │   ├── img
 │   └── script.js
 │
 ├── views/
 |     ├── anasayfa.ejs
-|     ├── index.ejs
+|     └── index.ejs
 |
 ├── app.js
 ├── package-lock.json
 ├── package.json
-├── README.md
+└── README.md
    ````
 
 ## Project Features and Usage
