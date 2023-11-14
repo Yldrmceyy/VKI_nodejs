@@ -41,6 +41,32 @@ cd TechCareer_Vki_Project
    ````
 7.Tarayıcıda http://localhost:3000 adresine gidin.
 
+## Proje Dizini
+  ```sh 
+TechCareer_Vki_Project/
+├── db/
+│    ├── index.js
+│ 
+├── node_modules/
+│    ├── (bağımlılıklar)
+│    └── (...)
+│
+├── public/
+|   ├── style.css
+|   |     ├── style.css
+|   |     ├── style2.css
+│   ├── img
+│   └── script.js
+│
+├── views/
+|     ├── anasayfa.ejs
+|     ├── index.ejs
+|
+├── app.js
+├── package-lock.json
+├── package.json
+├── README.md
+   ````
 ## Proje Özellikleri ve Kullanım
 
 **1- Kullanıcı Kaydı**:
@@ -121,6 +147,32 @@ cd TechCareer_Vki_Project
 6.Uygulamayı başlatın:
    ```sh 
    node app.js 
+   ````
+## Project File Directory
+  ```sh 
+TechCareer_Vki_Project/
+├── db/
+│    ├── index.js
+│ 
+├── node_modules/
+│    ├── (dependencies)
+│    └── (...)
+│
+├── public/
+|   ├── style.css
+|   |     ├── style.css
+|   |     ├── style2.css
+│   ├── img
+│   └── script.js
+│
+├── views/
+|     ├── anasayfa.ejs
+|     ├── index.ejs
+|
+├── app.js
+├── package-lock.json
+├── package.json
+├── README.md
    ````
 
 ## Project Features and Usage
