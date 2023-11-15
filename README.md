@@ -199,8 +199,8 @@ In the project, dynamic HTML pages were created using EJS (Embedded JavaScript).
 These core features allow users to register, log in, perform BMI calculations, and update their information.
 
 ## Screenshots of the Project
-![proje_adım](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/2071a00a-0ced-4d2b-a8bf-769c6c5057a8)
 
+![proje_adım_yeni (1)](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/0c6d288f-db91-48a8-ac26-be52f2c9e963)
 ## Licence
 This project is licensed under the MIT License. For more information
 See file [MIT](LICENSE)
