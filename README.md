@@ -80,17 +80,12 @@ Oturum açıkken, kullanıcılar "Çıkış" butonuyla oturumu kapatabilirler.
 Sisteme giriş yaptıktan sonra; kullanıcılar, kilo ve boy bilgilerini girerek VKİ hesaplayabilirler.
 VKİ hesaplandıktan sonra sonuç kullanıcıya gösterilir.
 
-**4- Bilgilerin Güncellenmesi**:
-Kullanıcılar, giriş yaptıktan sonra mevcut bilgilerini güncelleyebilirler.
-VKİ bilgileri güncellendiğinde, kullanıcıya sonuç tekrar gösterilir.
+**4-Eski Verilerin Tekrar Gösterilmesi**:
+ Aynı kullanıcı tekrar giriş yaptığında, girmiş olduğu eski verileri kullanıcıya sonuç olarak tekrar gösterebilir.
 
 **5- Bilgilerin Saklanması**:
 Kullanıcı bilgileri ve VKİ verileri MySQL veritabanında saklanır.
 Oturum açıkken kullanıcının verileri çekilip ekrana gösterilebilir.
-
-**6- Kullanıcı Arayüz**:
-Projede EJS (Embedded JavaScript) kullanılarak dinamik HTML sayfaları oluşturulmuştur.
-<br>
 
 
 Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
@@ -188,9 +183,8 @@ While logged in, users can log out with the "Log" button.
 After logging into the system; Users can calculate BMI by entering their weight and height information.
 Once the BMI is calculated, the result is displayed to the user.
 
-**4- Updating Information**:
-Users can update their existing information after logging in.
-When the BMI information is updated, the result is shown to the user again.
+**4-Display of Old Data Again:**:
+ When the same user logs in again, the old data user entered can be shown to the user again as a result.
 
 **5- Storage of Information**:
 User information and BMI data are stored in the MySQL database.
