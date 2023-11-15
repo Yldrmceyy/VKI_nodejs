@@ -88,11 +88,7 @@ Kullanıcı bilgileri ve VKİ verileri MySQL veritabanında saklanır.
 Oturum açıkken kullanıcının verileri çekilip ekrana gösterilebilir.
 
 
-Bu temel özellikler, kullanıcıların kayıt olmalarını, giriş yapmalarını, VKİ hesaplamalarını gerçekleştirmelerini ve bilgilerini güncellemelerini sağlar.
-
 ## Uygulama Ekran Görüntüleri
-
-
 
 ![proje_adım_yeni (1)](https://github.com/Yldrmceyy/TechCareer_Vki_Project/assets/106755050/0c6d288f-db91-48a8-ac26-be52f2c9e963)
 
@@ -195,8 +191,8 @@ While the user is logged in, the user's data can be captured and displayed on th
 
 **6- User Interface**:
 In the project, dynamic HTML pages were created using EJS (Embedded JavaScript).
-<br>
-These core features allow users to register, log in, perform BMI calculations, and update their information.
+
+
 
 ## Screenshots of the Project
 
