@@ -125,20 +125,20 @@ Install Node.js before starting to work on the project
   ````
 Open the project with VsCode.
 
-3. Proje dizinine gidin:
+3. Go to the project directory:
   ```sh 
 cd TechCareer_Vki_Project
    ````
 
-4.Gerekli bağımlılıkları yükleyin:
+4.Install the required dependencies:
    ```sh 
    npm install
    ````
 
-5.MySQL veritabanını oluşturun ve bağlantı bilgilerini config.js/index.js dosyasına ekleyin.
+5.Create the MySQL database and add the connection information to config.js/index.js.
 
 
-6.Uygulamayı başlatın:
+6.Start the project:
    ```sh 
    node app.js 
    ````
