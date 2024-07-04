@@ -1,7 +1,7 @@
 # TechCareer_Vki_Project
 # Vücut Kitle İndeksi (VKİ) Hesaplayıcı-tr
 ## Amaç
-Vücut Kitle İndeksi (VKİ), bir kişinin kilo durumunu değerlendirmek için kullanılan bir ölçümdür. Bu uygulama, kullanıcılara VKİ hesaplama ve bu verilerini saklama imkanı sunar.
+Vücut Kitle İndeksi (VKİ), bir kişinin kilo durumunu değerlendirmek için kullanılan bir ölçümdür.Bu uygulama, kullanıcılara VKİ hesaplama ve bu verilerini saklama imkanı sunar.
 
 ## Gereksinimler
 - Node.js
